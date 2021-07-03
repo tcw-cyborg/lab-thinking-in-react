@@ -5,7 +5,9 @@ import SearchBar from './SearchBar';
 const FilterableProductTable = () => {
     return (
         <div>
-            
+        <SearchBar />
+        <ProductTable />
+
         </div>
     );
 };
