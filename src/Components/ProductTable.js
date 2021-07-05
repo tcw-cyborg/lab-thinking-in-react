@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductRow from './ProductRow';
-import jsondata from './data.json';
+import jsondata from '../data.json';
 
 const ProductTable = () => {
     return (
