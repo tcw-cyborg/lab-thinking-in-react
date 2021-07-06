@@ -1,20 +1,24 @@
 import React from 'react';
 import ProductRow from './ProductRow';
-import jsondata from './data.json';
 
-const ProductTable = () => {
-    return (
-        <div>
-        <table>
-            <thead>
-                <tr>
-                    
-                </tr>
-            </thead>
-        </table>
-            
-        </div>
-    );
+const ProductTable = (props) => {
+  return (
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>name</th>
+            <th>price</th>
+          </tr>
+        </thead>
+        <tbody>
+          {props.dataproduct.map((e) => (
+            <ProductRow product={e} />
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
 };
 
 export default ProductTable;

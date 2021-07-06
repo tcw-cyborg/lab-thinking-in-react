@@ -2,11 +2,11 @@ import React from 'react';
 import ProductTable from './ProductTable';
 import SearchBar from './SearchBar';
 
-const FilterableProductTable = () => {
+const FilterableProductTable = (props) => {
     return (
         <div>
-        <SearchBar />
-        <ProductTable />
+        <SearchBar  />
+        <ProductTable dataproduct={props.products} />
 
         </div>
     );
